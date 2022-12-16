@@ -1,31 +1,6 @@
 %% Kristen Fogaren 8/23/22
-% Code will produce figures in Chapter 2 of OOI BGC Sensor Best Practices
-% CSV files are in shared google drive. 
-% https://drive.google.com/drive/folders/1ZQyt2YfRBE1IAxZcQewDwRvfDUufSuoX?usp=sharing
-addpath('C:\Users\palevsky\Desktop\DATA_FILES_FOR_FIGURES\oxygen')
-
-%% General plotting stuff 
-
-blue = [0     0.44706     0.74118];
-red = [0.85098     0.32549    0.098039];
-yellow = [0.92941     0.69412     0.12549];
-purple = [0.49412     0.18431     0.55686];
-green = [0.46667     0.67451     0.18824];
-cyan = [0.30196      0.7451     0.93333];
-maroon = [0.63529    0.078431     0.18431];
-grey = [0.5 0.5 0.5];
-lightcyan = [0.67843 0.92157 1];
-brightpurple = [0.74902           0     0.74902];
-forestgreen = [0     0.49804           0];
-teal = [0     0.74902     0.74902];
-navy = [0.078431     0.16863     0.54902];
-
-%% Set common plotting info
-F = 10;
-set(0,'defaultAxesFontSize',F)
-x0=2;
-y0=2;
-fullwidth=15;
+% Figures for Chapter 2 of OOI BGC Sensor Best Practices & User Guide
+Figures_all
 
 %% Figure 2-2 
 glider = readtable('Figure_2-2_Glider.csv','TextType','string');
@@ -58,7 +33,6 @@ deepiso = readtable('Figure_2-3.csv','TextType','string');
 ymin = 240; ymax = 285;
 % variables date and o2
 
-% Izi's file doesn't break up by deployment so I found deployments
 % Used diff(deepiso.date), quick and easy, not efficient 
 deployment1 = 1:194;
 deployment2 = 195:378;
@@ -169,5 +143,3 @@ legend('Deployment 8','Deployment 9','Corrected','Discrete (Winkler)','Location'
     'Orientation','horizontal')
 xlim([datetime(2019,10,20) datetime(2019,10,24)])
 ylim([220 270])
-
-%also ask about figure exporting

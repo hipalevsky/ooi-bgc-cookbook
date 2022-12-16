@@ -1,5 +1,5 @@
-%% Hilary Palevsky 11/17/2022
-% Code will produce figures in Chapter 4 of OOI BGC Sensor Best Practices
+%% Hilary Palevsky
+% Code will produce figures in Chapter 3 of OOI BGC Sensor Best Practices
 % CSV files are in shared google drive. 
 % https://drive.google.com/drive/u/0/folders/1JmoZlZt_SsiEo0G9geQT94f9payESmoe
 addpath('C:\Users\palevsky\Desktop\DATA_FILES_FOR_FIGURES\nitrate')
