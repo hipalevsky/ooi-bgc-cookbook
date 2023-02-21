@@ -162,3 +162,4 @@ codegen/
 
 # Octave session info
 octave-workspace
+*.nc
